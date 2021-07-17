@@ -3,7 +3,7 @@ import Home from "../components/Home";
 
 export default function App() {
   return (
-    <div className="container">
+    <div className="">
       <Head>
         <title>Preveen Raj's World</title>
         <link rel="icon" href="/favicon.ico" />
