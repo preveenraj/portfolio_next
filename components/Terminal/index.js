@@ -40,7 +40,7 @@ function Terminal(props) {
 
 
   return (
-    <div className="h-full w-1/2">
+    <div className="h-full md:w-1/2">
       <ReactTerminal
         name="TechrushTerminal"
         showControlButtons={true}
