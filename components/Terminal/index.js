@@ -40,14 +40,14 @@ function Terminal(props) {
 
 
   return (
-    <div className="h-full md:w-1/2">
+    <div className="h-full w-full md:w-1/2">
       <ReactTerminal
         name="TechrushTerminal"
         showControlButtons={true}
         prompt=">>"
-        welcomeMessage=""
+        welcomeMessage="Feeling lucky? "
         theme="dark"
-        errorMessage="Sorry, can't understand your English"
+        errorMessage="Sorry, can't understand your English. Try asking me 'help'."
         commands={commands}
       />
     </div>

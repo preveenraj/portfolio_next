@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* css to smooth scroll */
+html {
+    scroll-behavior: smooth;
+}

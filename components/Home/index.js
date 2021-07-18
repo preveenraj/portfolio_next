@@ -10,7 +10,7 @@ const Home = () => {
               <Image
                 src="/profile_banner.jpg"
                 alt="Picture of the author"
-                className="rounded-lg shadow"
+                className="rounded-lg shadow-lg"
                 layout="responsive"
                 priority={true}
                 width={1920}
