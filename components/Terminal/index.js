@@ -46,7 +46,7 @@ function Terminal(props) {
         showControlButtons={true}
         prompt=">>"
         welcomeMessage="Feeling lucky? "
-        theme="dark"
+        theme="light"
         errorMessage="Sorry, can't understand your English. Try asking me 'help'."
         commands={commands}
       />

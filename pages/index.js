@@ -4,6 +4,7 @@ import Terminal from '../components/Terminal';
 import { useState } from "react";
 import { TerminalContextProvider } from "react-terminal";
 import Nav from '../components/Nav';
+import Experience from '../components/Experience';
 
 export default function App() {
 
@@ -23,7 +24,7 @@ export default function App() {
           </div>
           <div
             id="terminal"
-            className="h-[456px] px-4 flex flex-col items-center justify-center gap-2">
+            className="hidden md:flex h-[456px] px-4 flex-col items-center justify-center gap-2">
             <span className="rounded-lg font-semibold text-blue-500">Let's talk Developer to Developer!</span>
             {showTerminal ?
               (
@@ -38,15 +39,17 @@ export default function App() {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="72" height="72"><path fill="none" d="M0 0h24v24H0z" /><path d="M11 12l-7.071 7.071-1.414-1.414L8.172 12 2.515 6.343 3.929 4.93 11 12zm0 7h10v2H11v-2z" /></svg>
               </span>}
           </div>
-          <div className="h-screen flex justify-center items-center">
+          {/* <div className="h-screen flex justify-center items-center">
+            <h1 className="text-3xl text-gray-300">
+              <Experience />
+            </h1>
+          </div> */}
+          {/* <div className="h-screen flex justify-center items-center">
             <h1 className="text-3xl text-gray-300">Coming S0000N</h1>
-          </div>
-          <div className="h-screen flex justify-center items-center">
+          </div> */}
+          {/* <div className="h-screen flex justify-center items-center">
             <h1 className="text-3xl text-gray-300">Coming S0000N</h1>
-          </div>
-          <div className="h-screen flex justify-center items-center">
-            <h1 className="text-3xl text-gray-300">Coming S0000N</h1>
-          </div>
+          </div> */}
         </main>
 
         <footer>
