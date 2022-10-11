@@ -38,7 +38,9 @@ const Home = () => {
           <Socials />
         </div>
       </div>
-
+     <div className="emoji">
+         <p style="font-size:100px">&#129409;</p>
+     </div>     
     </div>
   )
 }
