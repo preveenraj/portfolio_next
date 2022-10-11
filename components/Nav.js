@@ -15,9 +15,9 @@ const Nav = () => {
             <span
               onClick={() => window.location.href = "#terminal"}
               className="cursor-pointer">WORK</span>
-            <span
-              onClick={() => window.location.href = "#terminal"}
-              className="cursor-pointer">RESUME</span>
+              <a href="/preveen-raj-resume.pdf" download>
+              <span className="cursor-pointer">RESUME</span>
+              </a>
           </div>
         </div>
       </nav>
