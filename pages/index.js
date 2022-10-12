@@ -29,6 +29,13 @@ export default function App() {
         <Head>
           <title>Preveen Raj's World</title>
           <link rel="icon" href="/favicon.ico" />
+          <meta charset="utf-8" />
+          <meta property="og:title" content="Preveen Raj's World" />
+          <meta property="og:description" content="Dive into a Curious Rabbit Hole." />
+          <meta property="og:image" content="/profile-banner.jpg" />
+          <meta property="og:type" content="profile:first_name" />
+          <meta name="description" content="Preveen Raj's World. Dive into a Curious Rabbit Hole." />
+          <title>Example Books - high-quality used books for children</title>
         </Head>
 
         <main className="relative">
@@ -37,10 +44,10 @@ export default function App() {
             setShowResume={setShowResume}
           />
           <div className="h-screen">
-            {showResume 
-            && <Resume
-              setShowResume={setShowResume}
-            />}
+            {showResume
+              && <Resume
+                setShowResume={setShowResume}
+              />}
             <Home
               tab={tab}
             />
