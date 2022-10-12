@@ -2,7 +2,8 @@ import React, { useContext, useState } from "react";
 import classnames from "classnames";
 
 const Nav = ({
-  setTab
+  setTab,
+  setShowResume
 }) => {
 
   return (
@@ -17,9 +18,21 @@ const Nav = ({
             <span
               onClick={() => setTab("projects")}
               className="cursor-pointer">WORK</span>
-            <a href="/preveen-raj-resume.pdf" download>
-              <span className="cursor-pointer">RESUME</span>
+            <a 
+            href="/preveen-raj-resume.pdf" 
+            className="block md:hidden"
+            target="_blank"
+            noreferrer="true"
+            noopener="true"
+            >
+              <span 
+              className="cursor-pointer"
+              >RESUME</span>
             </a>
+            <span 
+            className="cursor-pointer hidden md:block"
+            onClick={() => setShowResume(true)}
+            >RESUME</span>
           </div>
         </div>
       </nav>

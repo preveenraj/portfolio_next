@@ -4,6 +4,7 @@ import Terminal from '../components/Terminal';
 import { useState } from "react";
 import { TerminalContextProvider } from "react-terminal";
 import Nav from '../components/Nav';
+import Resume from '../components/Resume';
 
 const tabs = {
   default: {
@@ -20,6 +21,7 @@ export default function App() {
 
   const [tab, setTab] = useState(tabs.default.value);
   const [showTerminal, setShowTerminal] = useState(false);
+  const [showResume, setShowResume] = useState(false);
 
   return (
     <TerminalContextProvider>
@@ -32,8 +34,13 @@ export default function App() {
         <main className="relative">
           <Nav
             setTab={setTab}
+            setShowResume={setShowResume}
           />
           <div className="h-screen">
+            {showResume 
+            && <Resume
+              setShowResume={setShowResume}
+            />}
             <Home
               tab={tab}
             />
