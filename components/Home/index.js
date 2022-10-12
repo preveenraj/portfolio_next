@@ -1,22 +1,31 @@
-import React from 'react'
-import Image from 'next/image';
+import React, { useState } from 'react'
 import Socials from './Socials';
-const Home = () => {
+import Default from './Default';
+import Experience from './Experience';
+import Projects from './Projects';
+
+const Home = ({
+  tab
+}) => {
+
+  const renderView = () => {
+    switch (tab) {
+      case 'projects':
+        return <Projects />
+      case 'experience':
+        return <Experience />
+      default:
+        return <Default />
+    }
+  }
+
   return (
     <div>
       <div>
         <div className="header">
           <div className="inner-header flex">
             <div className="h-1/2 w-full md:w-4/6 relative">
-              <Image
-                src="/profile_banner.jpg"
-                alt="Picture of the author"
-                className="rounded-lg shadow-lg"
-                layout="responsive"
-                priority={true}
-                width={1920}
-                height={1080}
-              />
+              {renderView()}
             </div>
           </div>
           <div>

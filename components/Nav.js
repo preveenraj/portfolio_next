@@ -1,7 +1,9 @@
 import React, { useContext, useState } from "react";
 import classnames from "classnames";
 
-const Nav = () => {
+const Nav = ({
+  setTab
+}) => {
 
   return (
     <>
@@ -10,14 +12,14 @@ const Nav = () => {
         <div className="h-full flex items-center justify-center md:justify-end font-bold text-xl text-gray-100 p-10">
           <div className="flex gap-4">
             <span
-              onClick={() => window.location.href = "#terminal"}
+              onClick={() => setTab("experience")}
               className="cursor-pointer">EXP</span>
             <span
-              onClick={() => window.location.href = "#terminal"}
+              onClick={() => setTab("projects")}
               className="cursor-pointer">WORK</span>
-              <a href="/preveen-raj-resume.pdf" download>
+            <a href="/preveen-raj-resume.pdf" download>
               <span className="cursor-pointer">RESUME</span>
-              </a>
+            </a>
           </div>
         </div>
       </nav>
